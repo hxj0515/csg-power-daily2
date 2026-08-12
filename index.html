@@ -134,18 +134,18 @@ footer a{color:var(--acc);text-decoration:none}
   <div class="brand">
     <div class="ey">CSG POWER · DAILY MORNING BRIEF</div>
     <h1>南方电网电力招投标 <b>晨报仪表盘</b></h1>
-    <div class="meta">日期 <b>2026年8月12日 星期三</b> · 数据窗口 <b>2026-08-06 ~ 08-12（近7日）</b> · 覆盖 <b>南网总部及11省网/地市/直属单位</b> · 8 大领域</div>
+    <div class="meta">日期 <b>2026年8月13日 星期四</b> · 数据窗口 <b>2026-08-06 ~ 08-13（近7日）</b> · 覆盖 <b>南网总部及11省网/地市/直属单位</b> · 8 大领域</div>
   </div>
   <div class="live"><span class="dot"></span><span>实时更新</span><span class="clock" id="clock">--:--:--</span></div>
 </header>
 
 <div class="kpis">
-  <div class="kpi"><b>52</b><span>近7日标讯总量</span></div>
-  <div class="kpi k2"><b>27</b><span>招标公告（在招）</span></div>
-  <div class="kpi k3"><b>25</b><span>中标公示（已定标）</span></div>
-  <div class="kpi k4"><b>16</b><span>覆盖采购主体（家）</span></div>
-  <div class="kpi k5"><b>2.54亿</b><span>样本披露金额（含未公开）</span></div>
-  <div class="kpi k6"><b>8 / 8</b><span>监测领域覆盖</span></div>
+  <div class="kpi"><b id="kTotal">—</b><span>近7日标讯总量</span></div>
+  <div class="kpi k2"><b id="kZb">—</b><span>招标公告（在招）</span></div>
+  <div class="kpi k3"><b id="kZh">—</b><span>中标公示（已定标）</span></div>
+  <div class="kpi k4"><b id="kOrg">—</b><span>覆盖采购主体（家）</span></div>
+  <div class="kpi k5"><b id="kAmt">—</b><span>样本披露金额（含未公开）</span></div>
+  <div class="kpi k6"><b id="kDom">—</b><span>监测领域覆盖</span></div>
 </div>
 
 <div class="sec">一、8 大领域热度 <em>点击卡片筛选下方清单</em></div>
@@ -174,17 +174,17 @@ footer a{color:var(--acc);text-decoration:none}
 
 <div class="sec">五、情报要点与行动建议</div>
 <div class="ins"><ol>
-  <li><b>数字电网/智能电网仍是最大增量池。</b>近7日智能电网相关标讯 <em>10 条</em>居首，深圳供电局"智能原生平台"服务专项（8402.9万）、南网数字运营电力交易平台功能改造、四维图新中标南网数字电网科技（广东）1688.5万，显示<b>AI+电网数字化</b>采购持续放量。</li>
-  <li><b>南网储能密集下单，设备更新窗口开启。</b>8/11发布励磁系统、GIS、SF6监测、振动监测等 7 标包公开招标（CG0200022002353344），叠加天生桥水储联合调频EPC、惠蓄/清蓄SF6系统更换，<em>电站智能化改造与电鸿化</em>需求明确。</li>
-  <li><b>服务类是流量基本盘。</b>服务类标讯 <em>18 条</em>占比最高，覆盖可研设计、后评价、咨询、培训、测评；南网总部第六批施工/第二批可研勘察设计中标已出，属地设计院（广东/广西/云南院等）持续受益。</li>
-  <li><b>低压智能台区+电能质量稳步推进。</b>海南"非直供小区抄表到户改造"框架、深圳"AI新能源台区优化运行"（241万中标）、南网数研院集约型电能质量治理装置研制（82.5万中标）印证台区智能化与电能质量治理常态化。</li>
-  <li><b>关键动作：</b>① 盯紧<b>广东10kV预装式变电站框架（5000万，8/31截标）</b>与<b>海南主网通信工程施工框架（9/2截标）</b>；② 在<b>南方电网供应链统一服务平台 bidding.csg.cn</b>完成供应商登记+数字证书；③ 框架类错过即锁死 1–2 年，优先布局。</li>
+  <li><b>智能电网/数字化仍是最大增量池。</b>本周智能电网相关标讯居首，深圳供电局"智能原生平台建设项目"服务专项<em>8402.9万</em>、广州供电局 220kV 天河棠下柔直背靠背工程数字孪生应用及智能运维系统工程设计施工总承包（8/12 中标，中国能建广东院）、南网科研院"驭电"大模型开发、南方总调电力气象观测数据驱动的预测决策研究，印证 <b>AI+电网数字化</b>采购持续放量。</li>
+  <li><b>南网储能密集下单，设备电鸿化改造窗口开启。</b>8/11 发布励磁系统、水电站安全监测、GIS、压板监测及智能巡视电鸿化改造、SF6 监测、振动监测等 7 标包公开招标（CG0200022002353344），叠加天二/惠蓄监控与励磁改造（截止 09-07）、钦州蓄能钢板采购、天生桥二级电站水储联合调频 EPC，<em>电站智能化与电鸿化</em>需求明确。</li>
+  <li><b>服务类是流量基本盘。</b>服务类标讯占比最高，覆盖可研设计、后评价、咨询、培训、测评；广州供电局 8/12 集中出 4 个中标（综合类车辆租赁、第二批生产项目、基建第二批服务、柔直数字孪生），属地设计院与技术服务商持续受益。</li>
+  <li><b>低压智能台区+电能质量稳步推进。</b>海南"非直供小区电力抄表到户改造"第二批设计施工总承包框架、深圳"AI 新能源台区优化运行"中标（241.17万）、贵州 35kV 干式空心电抗器（电能质量）、南网科研院高压专业科技类中标（西安高压电器研究院），台区智能化与电能质量治理常态化。</li>
+  <li><b>关键动作：</b>① 盯紧<b>广东 10kV 预装式变电站框架（5000万，08-31 截标）</b>、<b>海南主网通信工程施工框架（09-02 截标）</b>与<b>南网储能电鸿化改造 7 标包（CG0200022002353344，08-11 发布）</b>；② 在<b>南方电网供应链统一服务平台 bidding.csg.cn</b>完成供应商登记+数字证书；③ 框架类错过即锁死 1–2 年，优先布局。</li>
 </ol>
-<div class="note">⚠️ <b>数据来源说明：</b>本晨报数据由公开互联网（南方电网供应链统一服务平台 bidding.csg.cn、天眼查招中标、各电力招标聚合站及主流财经媒体）于 2026-08-12 联网检索整理，覆盖近7日（08-06~08-12）南方电网体系标讯。因「知了标讯」接口配额已用尽，本次未接入其结构化数据库；如需恢复该数据源并自动每日生成，请为设备账号充值：<a href="https://ai.zhiliaobiaoxun.com/auto-login?sid=1EOlpOTFEHiW7DRAnAiFEKKK4mYVDUNz-rWuj7zJSTYCPaK--VzvhSbJ3yOn2HRVa7mTQI-GzdtNt-cAHF4vRrHGI68NeKKQ6nyYAfk_-W2No9IHlNtXqfiInsA01yr2sHOWCYil2XHyzFCDAtyCzK7NmW_mNnHg20lyvVhuVKxE3VtwHoafbJw7DK3Wv4bf.o-hkqiq7mwocbSLQFWG2gQ" target="_blank">点击此处自动登录并充值</a>。部分公告未公开金额显示为"—"，不计入金额统计。点击标题跳转原始公告。</div>
+<div class="note">⚠️ <b>数据来源说明：</b>本晨报数据由公开互联网（南方电网供应链统一服务平台 bidding.csg.cn、天眼查招中标、各电力招标聚合站及主流财经/能源媒体）于 2026-08-13 联网检索整理，覆盖近7日（08-06~08-13）南方电网体系标讯。因「知了标讯」接口配额已用尽，本次未接入其结构化数据库；如需恢复该数据源并自动每日生成，请为设备账号充值：<a href="https://ai.zhiliaobiaoxun.com/auto-login?sid=1EOlpOTFEHiW7DRAnAiFEKKK4mYVDUNz-rWuj7zJSTYCPaK--VzvhSbJ3yOn2HRVa7mTQI-GzdtNt-cAHF4vRrHGI68NeKKQ6nyYAfk_-W2No9IHlNtXqfiInsA01yr2sHOWCYil2XHyzFCDAtyCzK7NmW_mNnHg20lyvVhuVKxE3VtwHoafbJw7DK3Wv4bf.o-hkqiq7mwocbSLQFWG2gQ" target="_blank">点击此处自动登录并充值</a>。部分公告未公开金额显示为"—"，不计入金额统计。点击标题跳转原始公告。</div>
 </div>
 
 <footer>
-数据窗口：2026-08-06 ~ 2026-08-12 ｜ 生成时间：2026-08-12 09:30 ｜ 监测范围：南网总部、广东/广西/云南/贵州/海南电网、广州/深圳供电局、南网科研院、数字电网集团、南网储能、南网供应链、南网能源等及下属单位。<br>
+数据窗口：2026-08-06 ~ 2026-08-13 ｜ 生成时间：2026-08-13 07:30 ｜ 监测范围：南网总部、广东/广西/云南/贵州/海南电网、广州/深圳供电局、南网科研院、数字电网集团、南网储能、南网供应链、南网能源等及下属单位。<br>
 领域：电能质量 · 电力电子 · 智能电网 · 低压智能台区 · 配电网 · 服务类 · 物资工具类 · 应急工具类。本页为单文件离线仪表盘，可双击直接打开；部署于 GitHub Pages（csg-power-daily2）。
 </footer>
 </div>
@@ -195,62 +195,111 @@ const DOMAINS=[
   {k:"低压智能台区",c:"#2fd6a6"},{k:"配电网",c:"#f783ac"},{k:"服务类",c:"#a78bfa"},
   {k:"物资工具类",c:"#fcc419"},{k:"应急工具类",c:"#ff8787"}
 ];
-// t:招标/中标  dom:领域  org:采购单位  title  amt:金额(字符串或"")  extra:截止/中标方  url
+// t:招标/中标  dom:领域  org:采购单位  title  amt:金额(字符串或"")  extra:截止/中标方  url  d:发布日期
 const DATA=[
+ {d:"2026-08-10",t:"招标",dom:"低压智能台区",org:"广东电网有限责任公司",title:"广东电网2026年东莞供电局营销计量现场作业与智能辅助试点建设专项招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438816.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"物资工具类",org:"广东电网有限责任公司",title:"广东电网2026年安健环(通用型标志牌)框架招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438819.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"物资工具类",org:"广东电网有限责任公司",title:"广东电网2026年1kV及以下交流动力电缆框架招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438817.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"配电网",org:"广东电网有限责任公司",title:"广东电网2026年35kV线路T接电自动化开关专项招标(二次招标)",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438818.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"服务类",org:"广东电网有限责任公司",title:"广东电网2026年惠州220千伏黄江输变电工程等29项工程可研和勘察设计招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438810.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"服务类",org:"广东电网有限责任公司",title:"广东电网2026年适应高比例新能源发展的广东新能源可替代能力差异化目标设计及合理消纳率测算研究等3项规划专题",amt:"",extra:"截止 2026-09-02",url:"https://www.bidding.csg.cn/zbgg/1200438672.jhtml"},
+ {d:"2026-08-11",t:"招标",dom:"电力电子",org:"广东电网有限责任公司",title:"广东电网2026-2027年变电设备(柔性直流设备)原厂零配件及技术服务框架直接采购公示",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbhxrgs/1200438853.jhtml"},
  {d:"2026-08-07",t:"招标",dom:"配电网",org:"广东电网有限责任公司",title:"广东电网公司2026年10kV预装式变电站(紧凑型800kVA、1250kVA)框架招标",amt:"5000万",extra:"截止 2026-08-31",url:"https://www.bidding.csg.cn/zbgg/1200438666.jhtml"},
  {d:"2026-08-07",t:"招标",dom:"服务类",org:"广东电网有限责任公司",title:"广东电网2026年系统运行服务类第六批专项招标(系统功能加装、网安设备升级维保)",amt:"",extra:"截止 2026-08-31",url:"https://www.bidding.csg.cn/zbgg/1200438653.jhtml"},
  {d:"2026-08-07",t:"招标",dom:"智能电网",org:"深圳供电局有限公司",title:"深圳供电局2026年数字化项目(智能原生平台建设项目等)服务专项公开招标",amt:"8402.9万",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438642.jhtml"},
+ {d:"2026-08-11",t:"招标",dom:"物资工具类",org:"深圳供电局有限公司",title:"深圳供电局2026年主网一次设备(35kV隔离开关、生产指挥中心机房设备等)第四批次物资专项公开询比采购",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438855.jhtml"},
  {d:"2026-08-07",t:"招标",dom:"物资工具类",org:"深圳供电局有限公司",title:"深圳供电局2026年主网一次设备类第四批次物资专项直接采购公示",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbhxrgs/1200438578.jhtml"},
  {d:"2026-08-07",t:"招标",dom:"低压智能台区",org:"海南电网有限责任公司",title:"海南电网2026-2028年非直供小区电力抄表到户改造第二批设计施工总承包框架公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438514.jhtml"},
  {d:"2026-08-07",t:"招标",dom:"应急工具类",org:"海南电网能源发展有限公司",title:"海南电网能源发展2026-2027年变电站消防工程专业分包框架公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438631.jhtml"},
- {d:"2026-08-07",t:"招标",dom:"配电网",org:"贵州电网有限责任公司",title:"贵州电网2026年工程类第三批生产一次500kV输变电项目施工公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438661.jhtml"},
- {d:"2026-08-07",t:"招标",dom:"应急工具类",org:"贵州电网有限责任公司",title:"贵州电网2026年物资类直流融冰刀闸公开招标",amt:"",extra:"",url:"https://www.dlztb.com/news/202608/07/869878.html"},
- {d:"2026-08-06",t:"招标",dom:"电能质量",org:"贵州电网有限责任公司",title:"贵州电网2026年物资类35kV干式空心电抗器(并联、限流)公开招标",amt:"",extra:"",url:"https://www.dlztb.com/news/202608/06/868680.html"},
- {d:"2026-08-10",t:"招标",dom:"智能电网",org:"海南电网有限责任公司",title:"海南电网2026-2028年电网基建主网项目通信工程施工框架公开招标",amt:"",extra:"截止 2026-09-02",url:"https://www.bidding.csg.cn/zbgg/1200438828.jhtml"},
  {d:"2026-08-11",t:"招标",dom:"物资工具类",org:"海南电网有限责任公司",title:"海南电网2026年第二批变电生产仪器仪表专项公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438939.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"服务类",org:"海南电网有限责任公司",title:"海南电网2026-2028年电网基建主网项目通信工程施工框架公开招标",amt:"",extra:"截止 2026-09-02",url:"https://www.bidding.csg.cn/zbgg/1200438828.jhtml"},
+ {d:"2026-08-07",t:"招标",dom:"服务类",org:"海南电网有限责任公司",title:"海南电网2026年供应链专项监督服务公开询比采购",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438553.jhtml"},
  {d:"2026-08-11",t:"招标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第三批规划前期专业小型基建可行性研究和勘察设计公开框架招标",amt:"",extra:"",url:"http://www.zgdlzb.cn/news/202608/11/723585.html"},
  {d:"2026-08-11",t:"招标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第二批管理创新专业管理创新(咨询)公开询比采购",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438933.jhtml"},
- {d:"2026-08-05",t:"招标",dom:"电能质量",org:"南方电网科学研究院",title:"南网科研院2026年7月用电计量专业科技类公开招标采购",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438342.jhtml"},
- {d:"2026-08-05",t:"招标",dom:"智能电网",org:"南方电网科学研究院",title:"南网科研院2026年面向柔性算力网络的全局感知互联及资源动态调控关键技术研究",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438175.jhtml"},
+ {d:"2026-08-07",t:"招标",dom:"配电网",org:"贵州电网有限责任公司",title:"贵州电网2026年工程类第三批生产一次500kV输变电项目施工公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438661.jhtml"},
+ {d:"2026-08-07",t:"招标",dom:"服务类",org:"贵州电网有限责任公司",title:"贵州电网2026年工程类第三批培训基地输电/配电项目总承包、监理公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438660.jhtml"},
+ {d:"2026-08-08",t:"招标",dom:"服务类",org:"贵州电网有限责任公司",title:"贵州电网2026-2027年服务类依托工程基建新技术研究服务公开招标",amt:"",extra:"",url:"http://www.dlztb.com/news/202608/08/871533.html"},
+ {d:"2026-08-11",t:"招标",dom:"服务类",org:"贵州电网有限责任公司",title:"贵州电网服务类2026年-2028年(变电站主变返厂检修、交直流系统检修、维保等)框架招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438952.jhtml"},
+ {d:"2026-08-12",t:"招标",dom:"服务类",org:"贵州电网有限责任公司",title:"贵州电网服务类2026年第二批(应用研究项目研发服务等)公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200439097.jhtml"},
+ {d:"2026-08-06",t:"招标",dom:"应急工具类",org:"贵州电网有限责任公司",title:"贵州电网2026年物资类直流融冰刀闸公开招标",amt:"",extra:"",url:"https://www.dlztb.com/news/202608/06/869878.html"},
+ {d:"2026-08-06",t:"招标",dom:"电能质量",org:"贵州电网有限责任公司",title:"贵州电网2026年物资类35kV干式空心电抗器(并联、限流)公开招标",amt:"",extra:"",url:"https://www.dlztb.com/news/202608/06/868680.html"},
  {d:"2026-08-06",t:"招标",dom:"智能电网",org:"南方电网科学研究院",title:"南网科研院新型电力系统'驭电'大模型开发支持研究项目公开招标",amt:"",extra:"截止 2026-08-28",url:"https://www.bidding.csg.cn/zbgg/1200438488.jhtml"},
- {d:"2026-08-11",t:"招标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能公司励磁系统设备、水电站安全监测、GIS、压板监测及智能巡视电鸿化改造、SF6监测、振动监测等公开招标",amt:"",extra:"项目 CG0200022002353344",url:"https://finance.sina.cn/2026-08-12/detail-inimzivt3692352.d.html"},
- {d:"2026-08-07",t:"招标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能建管公司钦州蓄能电站引水钢支管的钢板采购和加工制作公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438558.jhtml"},
- {d:"2026-08-07",t:"招标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能西部修试公司天二电厂计算机监控系统改造、惠蓄电厂励磁系统改造设备采购公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438549.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"智能电网",org:"南方电网科学研究院",title:"南网科研院2026年5月信安专业信息化类公开招标(二次招标)",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438789.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"电力电子",org:"南方电网科学研究院",title:"南网科研院构网型储能变流器涉网性能测试评价理论体系研究",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438773.jhtml"},
+ {d:"2026-08-06",t:"招标",dom:"服务类",org:"南方电网科学研究院",title:"南网科研院2026年6月信安专业经营支撑类公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438490.jhtml"},
+ {d:"2026-08-11",t:"招标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能公司励磁系统设备、水电站安全监测系统、GIS设备、压板监测及智能巡视电鸿化改造设备、SF6监测、振动监测等公开招标",amt:"",extra:"项目 CG0200022002353344",url:"https://www.bidding.csg.cn/zbgg/1200438864.jhtml"},
+ {d:"2026-08-07",t:"招标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能建管公司钦州蓄能电站引水钢支管钢板采购和加工制作公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438558.jhtml"},
+ {d:"2026-08-07",t:"招标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能西部修试公司天二电厂计算机监控系统改造、惠蓄电厂励磁系统改造设备采购公开招标",amt:"",extra:"截止 2026-09-07",url:"https://www.bidding.csg.cn/zbgg/1200438549.jhtml"},
  {d:"2026-08-06",t:"招标",dom:"电力电子",org:"南方电网储能股份有限公司",title:"南网储能西部修试公司2026-2027年天生桥二级电站水储联合调频项目EPC总承包公开招标",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438419.jhtml"},
  {d:"2026-08-06",t:"招标",dom:"服务类",org:"南方电网储能股份有限公司",title:"南网储能公司南宁蓄能电站管理用房勘测设计等咨询公开谈判采购",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438437.jhtml"},
+ {d:"2026-08-11",t:"招标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能修试公司梅蓄二期和西修公司南宁蓄能电站备品备件耗材公开招标(三次)",amt:"",extra:"",url:"https://www.bidding.csg.cn/zbgg/1200438761.jhtml"},
+ {d:"2026-08-12",t:"招标",dom:"服务类",org:"南方电网储能股份有限公司",title:"南网储能储能科研院消防巡检智能监督场景开发、建管公司抽水蓄能调节容量补偿机制研究公开谈判",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200439012.jhtml"},
+ {d:"2026-08-11",t:"招标",dom:"服务类",org:"南方电网储能股份有限公司",title:"南网储能修试公司金属材料检测及失效分析、板式冷却器维修等框架采购公开谈判",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438915.jhtml"},
+ {d:"2026-08-11",t:"招标",dom:"服务类",org:"南方电网储能股份有限公司",title:"南网储能修试公司蓄能电厂上下库水位冗余化计算与可靠性提升改造服务类公开谈判(二次)",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438762.jhtml"},
  {d:"2026-08-10",t:"招标",dom:"物资工具类",org:"广东电网能源发展有限公司",title:"广东电网能源发展2026-2028年度IT低值易耗品框架协议采购(二次)",amt:"",extra:"",url:"https://ecsg.com.cn/cms/NoticeDetail.html?objectId=3aa16253a0364d43afe68161f705afb8&objectType=1&typeid=4"},
  {d:"2026-08-10",t:"招标",dom:"物资工具类",org:"广东电网能源发展有限公司",title:"广东电网能源发展2026年度固定资产(汽车起重机)专项采购(三次)",amt:"",extra:"",url:"https://ecsg.com.cn/cms/NoticeDetail.html?objectId=0617072870104B39B7A31EFEF06D5739&objectType=1&typeid=4"},
  {d:"2026-08-10",t:"招标",dom:"物资工具类",org:"广东电网能源发展有限公司",title:"广东电网能源发展2026年度固定资产(声光学探测仪器)专项采购(二次)",amt:"",extra:"",url:"https://ecsg.com.cn/cms/NoticeDetail.html?objectId=5468e3e418454fec90be22c4983f4839&objectType=1&typeid=4"},
- {d:"2026-08-10",t:"招标",dom:"物资工具类",org:"广东电网能源发展有限公司",title:"佛山供电局地区2026-2028年度变电站技改修理项目施工变电检修设备零配件及技术服务框架采购(二次)",amt:"1000万",extra:"",url:"https://www.dlnyzb.com/detail/41896117"},
- {d:"2026-08-05",t:"招标",dom:"服务类",org:"南方电网数字电网集团(贵州)",title:"2026年南网数字集团(贵州)有限公司杰思系统第三方测评服务公开谈判",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438368.jhtml"},
- {d:"2026-08-03",t:"招标",dom:"服务类",org:"南方电网数字电网集团深圳分公司",title:"2026-2027年南网数字集团深圳分公司云景人力资源综合分析技术服务公开谈判",amt:"",extra:"",url:"https://www.bidding.csg.cn/fzbgg/1200438052.jhtml"},
+ {d:"2026-08-10",t:"招标",dom:"物资工具类",org:"佛山供电局地区",title:"佛山供电局地区2026-2028年度变电站技改修理项目施工变电检修设备零配件及技术服务框架采购(二次)",amt:"1000万",extra:"",url:"https://www.dlnyzb.com/detail/41896117"},
 
  {d:"2026-08-06",t:"中标",dom:"服务类",org:"中国南方电网有限责任公司",title:"南方电网公司2026年电网基建工程第二批可研勘察设计公开招标项目中标公示",amt:"",extra:"中标：各电力设计院",url:"https://www.bidding.csg.cn/zbhxrgs/1200438415.jhtml"},
  {d:"2026-08-06",t:"中标",dom:"服务类",org:"中国南方电网有限责任公司",title:"南方电网公司2026年电网基建工程第六批施工公开招标项目中标公示",amt:"",extra:"中标：广东安总电力等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438397.jhtml"},
- {d:"2026-08-07",t:"中标",dom:"低压智能台区",org:"深圳供电局有限公司",title:"深圳供电局2026年创新项目(AI新能源台区优化运行技术)服务专项公开招标中标公示",amt:"241.17万",extra:"中科开创(广州)",url:"https://www.bidding.csg.cn/zbhxrgs/1200438629.jhtml"},
- {d:"2026-08-07",t:"中标",dom:"智能电网",org:"深圳供电局有限公司",title:"深圳供电局2026年创新项目(具身智能和多机协同架空线路封网作业机器人)服务专项公开招标中标公示",amt:"265.5万",extra:"深圳电网智慧能源技术",url:"https://www.bidding.csg.cn/zbhxrgs/1200438628.jhtml"},
- {d:"2026-08-07",t:"中标",dom:"应急工具类",org:"深圳供电局有限公司",title:"深圳供电局2026年电力科学研究院生产指挥中心机房UPS加装及机房扩容改造施工专项公开招标中标公示",amt:"",extra:"深圳市深鹏达电网科技(94.2%)",url:"https://www.bidding.csg.cn/zbhxrgs/1200438626.jhtml"},
- {d:"2026-08-06",t:"中标",dom:"智能电网",org:"深圳供电局有限公司",title:"深圳供电局2026年信息类软硬件(电脑/云平台/网络隔离/大数据平台)第一批次物资专项公开招标中标公示",amt:"8640万",extra:"南网数字电网集团深圳分公司等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438413.jhtml"},
- {d:"2026-08-07",t:"中标",dom:"服务类",org:"深圳供电局有限公司",title:"深圳供电局2026年500千伏深汕(玺山)输变电工程投资后评价服务专项公开询比中标公示",amt:"80.36万",extra:"广州电力设计院",url:"https://www.bidding.csg.cn/zbhxrgs/1200438630.jhtml"},
- {d:"2026-08-04",t:"中标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第一批规划前期专业电力专项规划等4个公开招标采购项目中标公告",amt:"",extra:"中南电力设计院等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438210.jhtml"},
- {d:"2026-08-04",t:"中标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第二批市场营销专业营销服务热线运营服务等3个公开招标采购项目中标公示",amt:"165.7万",extra:"广西通信产业服务等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438217.jhtml"},
- {d:"2026-08-04",t:"中标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第一批基建专业建设费用标准研究公开招标采购项目中标公示",amt:"",extra:"广西中宇等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438128.jhtml"},
+ {d:"2026-08-06",t:"中标",dom:"智能电网",org:"深圳供电局有限公司",title:"深圳供电局2026年信息类软硬件(电脑/云平台/网络隔离/大数据平台)第一批次物资专项中标公示",amt:"8640万",extra:"南网数字电网集团深圳分公司等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438413.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"低压智能台区",org:"深圳供电局有限公司",title:"深圳供电局2026年创新项目(AI新能源台区优化运行技术)服务专项中标公示",amt:"241.17万",extra:"中科开创(广州)",url:"https://www.bidding.csg.cn/zbhxrgs/1200438629.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"智能电网",org:"深圳供电局有限公司",title:"深圳供电局2026年创新项目(具身智能和多机协同架空线路封网作业机器人)服务专项中标公示",amt:"265.5万",extra:"深圳电网智慧能源技术",url:"https://www.bidding.csg.cn/zbhxrgs/1200438628.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"应急工具类",org:"深圳供电局有限公司",title:"深圳供电局2026年电力科学研究院生产指挥中心机房UPS加装及机房扩容改造施工专项中标公示",amt:"",extra:"深圳市深鹏达电网科技(94.2%)",url:"https://www.bidding.csg.cn/zbhxrgs/1200438626.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"服务类",org:"深圳供电局有限公司",title:"深圳供电局2026年500千伏深汕(玺山)输变电工程投资后评价服务专项询比中标公示",amt:"80.36万",extra:"广州电力设计院",url:"https://www.bidding.csg.cn/zbhxrgs/1200438630.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第一批生产技术专业配电自动化终端维护公开招标采购项目中标公告",amt:"",extra:"广西西能自动化",url:"https://www.bidding.csg.cn/zbhxrgs/1200438243.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"物资工具类",org:"广西电网有限责任公司",title:"广西电网2026年省级物资集中采购生产类框架公开招标项目中标公示",amt:"",extra:"山东泰开电缆、广东坚宝电缆等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438215.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第一批基建专业建设费用标准研究公开招标采购项目中标公示",amt:"",extra:"江西博微、广西绿能等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438128.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"应急工具类",org:"海南电网有限责任公司",title:"海南电网2026年应急基地配套二期建设改造物资专项公开招标项目中标公示",amt:"801万",extra:"郑州万特电气",url:"https://www.bidding.csg.cn/zbhxrgs/1200438555.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"服务类",org:"海南电网能源发展有限公司",title:"海南电网能源发展2026-2027年变电建筑专业分包框架公开招标项目中标公告",amt:"",extra:"广东省一建、中国能建湖南火电",url:"https://www.bidding.csg.cn/zbhxrgs/1200438612.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"智能电网",org:"海南电网有限责任公司",title:"海南电网2026-2028年远程监造平台供应商互联接入及数据采集服务专项中标公告",amt:"",extra:"广州粤能电力科技",url:"https://www.gwwl.com.cn/html/announcement.html?A=ee2eab12ecea46bdb765a4b8042c6bb8"},
+ {d:"2026-08-07",t:"中标",dom:"配电网",org:"海南电网有限责任公司",title:"海南电网2026年第三批基建主网项目施工专项公开招标项目中标公示",amt:"1133.64万",extra:"云南天星实业",url:"https://www.gwwl.com.cn/html/announcement.html?A=eb4996a802084b2d918ed369d7b99a7f"},
+ {d:"2026-08-07",t:"中标",dom:"物资工具类",org:"南方电网储能股份有限公司",title:"南网储能修试公司仓库木箱制作、仓库叉车购置公开询比采购项目中标公示",amt:"",extra:"亚星电气(广西)、浙江天勋标牌",url:"https://www.163.com/dy/article/L44AOGER05568W0A.html"},
+ {d:"2026-08-07",t:"中标",dom:"服务类",org:"南方电网储能股份有限公司",title:"南网储能广东新丰抽水蓄能施工期及试运行期水土保持监测、南宁蓄能水库捞渣中标公示",amt:"27.7万",extra:"珠江水利委员会珠江流域水土保持监测中心站",url:"https://www.163.com/dy/article/L44AOGER05568W0A.html"},
+ {d:"2026-08-07",t:"中标",dom:"电力电子",org:"南方电网储能股份有限公司",title:"南网储能宝清储能站交直流系统改造设备、鲁布革电厂供电系统改造等成交公告",amt:"",extra:"云南晨鸣电器",url:"https://www.bidding.csg.cn/zbhxrgs/1200438506.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"智能电网",org:"南方电网综合能源股份有限公司",title:"南网能源四川省绵阳市九洲集团智慧能源项目EPC总承包工程中标候选人公示",amt:"3202.3万",extra:"广东鼎云能源科技",url:"https://www.nandudu.com/bidding_infos/111596?cid=14"},
+ {d:"2026-08-07",t:"中标",dom:"服务类",org:"南方电网储能股份有限公司",title:"南网储能科技公司2026-2028年独立电池储能项目可研与设计技术服务中标",amt:"6188万",extra:"中国电建集团中南勘测设计研究院",url:"https://www.163.com/dy/article/L44AOGER05568W0A.html"},
+ {d:"2026-08-11",t:"中标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第一批规划前期专业电力专项规划等4个公开招标采购项目中标公告",amt:"",extra:"中南电力设计院等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438210.jhtml"},
+ {d:"2026-08-11",t:"中标",dom:"服务类",org:"广西电网有限责任公司",title:"广西电网2026年第二批市场营销专业营销服务热线运营服务等3个公开招标采购项目中标公示",amt:"165.7万",extra:"广西通信产业服务等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438217.jhtml"},
  {d:"2026-08-11",t:"中标",dom:"服务类",org:"贵州电网有限责任公司",title:"贵州电网服务类2026年第一批(营销创新技术、营业厅服务业务外委等)公开招标中标公告",amt:"",extra:"国电南瑞等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438884.jhtml"},
  {d:"2026-08-11",t:"中标",dom:"服务类",org:"贵州电网有限责任公司",title:"贵州电网服务类2027-2028年运输服务、劳务服务公开招标中标公告",amt:"",extra:"彩讯科技等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438880.jhtml"},
  {d:"2026-08-11",t:"中标",dom:"电力电子",org:"中国南方电网有限责任公司",title:"南方电网公司海南-广东电力灵活互济工程海缆及附件专项招标项目中标公告",amt:"",extra:"中天科技海缆、宁波东方电缆",url:"https://www.bidding.csg.cn/zbhxrgs/1200438899.jhtml"},
- {d:"2026-08-11",t:"中标",dom:"智能电网",org:"中国南方电网有限责任公司",title:"南方总调电力气象观测数据驱动的电网业务协同与气象+新能源预测决策组合机制创新研究中标公告",amt:"",extra:"上海觅途等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438891.jhtml"},
- {d:"2026-08-11",t:"中标",dom:"电能质量",org:"南方电网科学研究院",title:"南网科研院2026年4月高压专业科技类公开谈判采购项目(二次)中标公告",amt:"",extra:"西安高压电器研究院",url:"https://www.bidding.csg.cn/zbhxrgs/1200438898.jhtml"},
+ {d:"2026-08-11",t:"中标",dom:"智能电网",org:"中国南方电网有限责任公司",title:"南方总调电力气象观测数据驱动的电网业务协同与气象+新能源预测决策组合机制创新研究中标公告",amt:"",extra:"上海觅途",url:"https://www.bidding.csg.cn/zbhxrgs/1200438891.jhtml"},
+ {d:"2026-08-11",t:"中标",dom:"电能质量",org:"南方电网科学研究院",title:"南网科研院2026年4月高压专业科技类公开谈判采购项目中标公告",amt:"",extra:"西安高压电器研究院",url:"https://www.bidding.csg.cn/zbhxrgs/1200438898.jhtml"},
  {d:"2026-08-11",t:"中标",dom:"智能电网",org:"南网数字运营软件科技(广东)",title:"南网数字运营软件科技(广东)电力交易平台个性化功能改造开发实施服务采购项目中标公告",amt:"",extra:"北京科东、烟台海颐",url:"https://www.bidding.csg.cn/zbhxrgs/1200438901.jhtml"},
  {d:"2026-08-11",t:"中标",dom:"服务类",org:"南网人才发展中心",title:"南网人才发展中心监督控制管理平台二、三期推广实施项目中标公告",amt:"",extra:"南网数字运营软件",url:"https://www.bidding.csg.cn/zbhxrgs/1200438887.jhtml"},
  {d:"2026-08-11",t:"中标",dom:"服务类",org:"鼎和财产保险股份有限公司",title:"鼎和财险2026年培训服务框架公开招标中标公告",amt:"",extra:"深圳仁脉等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438886.jhtml"},
- {d:"2026-08-10",t:"中标",dom:"智能电网",org:"南方电网数字电网科技(广东)",title:"四维图新中标南网数字电网科技(广东)有限公司专项采购项目",amt:"1688.5万",extra:"四维图新",url:"https://wap.eastmoney.com/a/202608103836694667.html"},
- {d:"2026-07-31",t:"中标",dom:"电能质量",org:"南方电网数字电网研究院",title:"南网数研院2026年集约型电能质量治理装置研制公开谈判采购项目中标公示",amt:"82.5万",extra:"南京赫曦电气、苏州华天国科",url:"https://www.zhiliaobiaoxun.com/content/511904690/b2?sk=5C06C2246B729BC9F8D61AAB8B65CE3A12F0F588&from=skill"},
- {d:"2026-08-06",t:"中标",dom:"物资工具类",org:"广东电网能源发展有限公司",title:"惠州供电局输电管理二所2025年35kV-220kV输电线路技改修理项目施工框架成交公告",amt:"",extra:"湖南湘金电力",url:"https://ecsg.com.cn/cms/NoticeDetail.html?objectId=2CA68AB276574712A98ADFEEABADB834&objectType=1&typeid=4"}
+ {d:"2026-08-11",t:"中标",dom:"服务类",org:"南方电网综合能源股份有限公司",title:"南网能源2026-2027年科技咨询服务项目中标候选人公示",amt:"",extra:"",url:"https://www.nandudu.com/bidding_infos/111602?cid=14"},
+ {d:"2026-08-11",t:"中标",dom:"智能电网",org:"南方电网综合能源股份有限公司",title:"南网综合能源2026年能源综合利用工程设备框架(光伏组件)中标候选人公示",amt:"",extra:"TCL中环、晶澳、隆基 0.727-0.759元/W",url:"https://mguangfu.bjx.com.cn/mnews/20260811/1508060.shtml"},
+ {d:"2026-08-11",t:"中标",dom:"电力电子",org:"南方电网综合能源股份有限公司",title:"南网综合能源2026年能源综合利用工程设备框架(逆变器)中标候选人公示",amt:"",extra:"",url:"https://www.nandudu.com/bidding_infos/111603?cid=14"},
+ {d:"2026-08-12",t:"中标",dom:"电力电子",org:"广东电网有限责任公司广州供电局",title:"广州供电局220kV天河棠下柔直背靠背工程数字孪生应用及智能运维系统工程设计施工总承包(二次)中标公告",amt:"",extra:"中国能建广东院",url:"https://www.bidding.csg.cn/zbhxrgs/1200438954.jhtml"},
+ {d:"2026-08-12",t:"中标",dom:"服务类",org:"广东电网有限责任公司广州供电局",title:"广州供电局2026年综合类车辆租赁项目中标公示",amt:"",extra:"广州安迅三通等",url:"https://www.bidding.csg.cn/zbhxrgs/1200439065.jhtml"},
+ {d:"2026-08-12",t:"中标",dom:"服务类",org:"广东电网有限责任公司广州供电局",title:"2026年广州供电局第二批生产项目专项招标中标公示",amt:"",extra:"中友四达、广东能建广东院等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438981.jhtml"},
+ {d:"2026-08-12",t:"中标",dom:"服务类",org:"广东电网有限责任公司广州供电局",title:"广州供电局2026年基建第二批服务(奥林220千伏出线工程二期等)专项招标中标公告",amt:"",extra:"广州铁路投建、广州电力设计院等",url:"https://www.bidding.csg.cn/zbhxrgs/1200439025.jhtml"},
+ {d:"2026-08-11",t:"中标",dom:"服务类",org:"广东电网有限责任公司广州供电局",title:"2026年至2027年广州供电局电费法律服务项目框架招标中标公告",amt:"",extra:"炜衡(广州)、君信经纶君厚等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438849.jhtml"},
+ {d:"2026-08-07",t:"中标",dom:"配电网",org:"广东电网有限责任公司广州供电局",title:"广州供电局2026年基建第二批施工项目(110千伏桥兴扩建、110千伏东漖输变电)专项招标中标公示",amt:"",extra:"广州番电电力建设集团",url:"https://www.bidding.csg.cn/zbhxrgs/1200438618.jhtml"},
+ {d:"2026-08-06",t:"中标",dom:"服务类",org:"云南电网有限责任公司",title:"云南电网2026年第二批科技项目服务类专项采购(谈判采购)中标公示",amt:"",extra:"南网科研院 41.82万等",url:"https://www.bidding.csg.cn/zbhxrgs/1200438471.jhtml"}
 ];
 
 let curDom=null, curType="all", curQ="";
 const domColor=k=>{const x=DOMAINS.find(d=>d.k===k);return x?x.c:"#888"};
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const numAmt=s=>parseFloat((s||"").replace(/[^\d.]/g,""))||0;
+
+// KPI (动态计算)
+const total=DATA.length;
+const zb=DATA.filter(x=>x.t==="招标").length;
+const zh=DATA.filter(x=>x.t==="中标").length;
+const orgSet=new Set(DATA.map(x=>x.org));
+const amtWan=DATA.reduce((s,x)=>s+numAmt(x.amt),0);
+const domSet=new Set(DATA.map(x=>x.dom));
+document.getElementById("kTotal").textContent=total;
+document.getElementById("kZb").textContent=zb;
+document.getElementById("kZh").textContent=zh;
+document.getElementById("kOrg").textContent=orgSet.size;
+document.getElementById("kAmt").textContent=(amtWan/10000).toFixed(2)+"亿";
+document.getElementById("kDom").textContent=domSet.size+" / 8";
 
 // domain cards
 const maxDom=Math.max(...DOMAINS.map(d=>DATA.filter(x=>x.dom===d.k).length));
@@ -260,7 +309,7 @@ document.getElementById("domains").innerHTML=DOMAINS.map(d=>{
   const zh=DATA.filter(x=>x.dom===d.k&&x.t==="中标").length;
   return `<div class="dom" data-dom="${d.k}" style="--c:${d.c}">
     <div class="top"><h3 style="color:${d.c}">${d.k}</h3><span class="n">${n}</span></div>
-    <div class="bar"><i style="width:${Math.round(n/maxDom*100)}%"></i></div>
+    <div class="bar"><i style="width:${maxDom?Math.round(n/maxDom*100):0}%"></i></div>
     <span class="s">在招 ${zb} · 中标 ${zh}</span></div>`;
 }).join("");
 
@@ -294,8 +343,7 @@ function apply(){
   document.getElementById("cZb").textContent=zb.length+" 条";
   document.getElementById("cZh").textContent=zh.length+" 条";
   document.getElementById("fltLabel").textContent=curDom?("领域："+curDom):"全部领域"+(curType!=="all"?(" · "+curType):"");
-  // opps: 招标 with amount, sorted
-  const opp=rows.filter(x=>x.t==="招标"&&x.amt).sort((a,b)=>parseFloat((b.amt||"0").replace(/[^\d.]/g,""))-parseFloat((a.amt||"0").replace(/[^\d.]/g,"")));
+  const opp=rows.filter(x=>x.t==="招标"&&x.amt).sort((a,b)=>numAmt(b.amt)-numAmt(a.amt));
   document.getElementById("opps").innerHTML=opp.length?opp.slice(0,8).map(x=>
     `<div class="op"><div class="tt">${esc(x.title)}</div>
      <div class="org">${esc(x.org)} · ${x.d}</div>
